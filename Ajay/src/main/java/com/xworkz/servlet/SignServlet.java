@@ -34,9 +34,11 @@ public class SignServlet extends HttpServlet {
 		}
 		else {
 			req.setAttribute("failure",user+" your signup failure");
+			req.setAttribute("dto", signupDTO);
 		}
 		RequestDispatcher requestDispatcher=req.getRequestDispatcher("Signup.jsp");
 		requestDispatcher.forward(req,resp);
+		
 	}
 
 }

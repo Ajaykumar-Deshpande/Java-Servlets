@@ -12,8 +12,8 @@
 <h1>${failure}</h1>
 	<form action="login" method="post">
 		<pre>
-user ID<input type="text" name="name">
-Email<input type="email" name="email">
+user ID<input type="text" name="name" value="${dto.name}"/>
+Email<input type="email" name="email" value="${dto.email}"/>
 Password<input type="password" name="password">
 Confirm Password<input type="password" name="confirmpassword">
 <input type="submit" value="Signup">
